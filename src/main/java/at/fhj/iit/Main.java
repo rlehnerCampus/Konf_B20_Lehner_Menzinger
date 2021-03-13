@@ -10,5 +10,15 @@ public class Main {
 
         Drink d = new SimpleDrink("Rotwein",l);
         System.out.println(d);
+        System.out.println();
+
+        Whiskey j = new Whiskey("Jameson");
+        System.out.println("New Whiskey: " + j.name);
+        j.setAge(10);
+        System.out.println("Age in years " + j.getAge());
+        j.setBottling("Oak");
+        System.out.println("Whiskey is bottled in: " + j.getBottling() + " barrels");
+        j.setRegion("Irish");
+        System.out.println("Region of the Whiskey: " + j.getRegion());
     }
 }
