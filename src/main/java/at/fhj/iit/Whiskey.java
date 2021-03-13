@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class Whiskey extends Drink{
 
-    private int age = 15;
+    private int age;
     private String region;
     private String bottling;
 
@@ -44,6 +44,16 @@ public class Whiskey extends Drink{
 
     public String getBottling(){
         return this.bottling;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    public void setBottling(String bottling){
+        this.bottling = bottling;
+    }
+    public void setRegion(String region){
+        this.region = region;
     }
 }
 
