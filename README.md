@@ -33,3 +33,7 @@
   ```
 
 - added file header
+
+- fixed bug in Beer.java isCommonIn - before "AT" was used instead of the parameter
+
+- implemented in Main.java with output of the main facts
