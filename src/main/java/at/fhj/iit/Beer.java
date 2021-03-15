@@ -14,7 +14,7 @@ import java.util.Arrays;
 public class Beer extends Drink
 {
     private double volume = 0.5;
-    private double percent = 5.3;
+    private double percent = 5.134;
 
     /**
      * Creates a Beer object with given name, e.g. Budweiser or Freistaedter
@@ -132,7 +132,7 @@ public class Beer extends Drink
     {
         try
         {
-            ArrayList<String> cmn = new ArrayList<> (Arrays.asList(this.commonBrands("AT")));
+            ArrayList<String> cmn = new ArrayList<> (Arrays.asList(this.commonBrands(country)));
             if(cmn.contains(this.name))
                 return true;
         }
