@@ -83,7 +83,6 @@ public class Beer extends Drink
         brandsDE[9]="Erdinger";
         switch(country)
         {
-
             case "DE": return brandsDE;
             case "AT": return brandsAT;
             default: throw new Exception("No valid country");
