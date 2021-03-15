@@ -1,18 +1,35 @@
 # Konf_B20_Lehner_Menzinger
 
-Christoph Menzinger:
+### Changelog
 
-extends new class "Whiskey.java" extends from Drink.java
+##### Christoph Menzinger:
 
-initialization of age, region and bottling of Whiskey.java
+- extends new class "Whiskey.java" extends from Drink.java
 
-implement new getter and setter of Whiskey.java
+- initialization of age, region and bottling of Whiskey.java
 
-create Whisky Jameson in main
+- implement new getter and setter of Whiskey.java
 
-definition of the new whiskey in new main
+- create Whisky Jameson in main
 
-print information of the new whiskey "Jameson"
+- definition of the new whiskey in new main
+
+- print information of the new whiskey "Jameson"
 
 
-Robert Lehner extends Drink.java with Beer.java
+##### Robert Lehner
+
+- extends Drink.java with Beer.java
+
+- initialization of super methods with override
+
+- added javadoc informations 
+
+- added a new Method 
+
+- ```java
+  public String[] commonBrands(String country [AT|DE]) throws Exception [if country is not from list]
+      returns primitive String Array with the 10 most common brands
+  ```
+
+- added file header
