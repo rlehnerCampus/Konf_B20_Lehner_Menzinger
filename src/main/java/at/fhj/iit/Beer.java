@@ -6,16 +6,50 @@
 */
 
 package at.fhj.iit;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class Beer extends Drink
 {
+    private double volume = 0.5;
+    private double percent = 5.3;
+
     /**
-     * Creates a Drink object with given name, e.g. juice or orange juice
+     * Creates a Beer object with given name, e.g. Budweiser or Freistaedter
      *
      * @param name name of the drink
      */
     public Beer(String name)
     {
         super(name);
+    }
+
+    /**
+     * Creates a Beer object with given name, e.g. Budweiser or Freistaedter
+     *
+     * @param name name of the drink
+     * @param volume volume of the drink in l
+     */
+    public Beer(String name,double volume)
+    {
+        super(name);
+        this.volume=volume;
+    }
+
+    /**
+     * Creates a Beer object with given name, e.g. Budweiser or Freistaedter
+     *
+     * @param name name of the drink
+     * @param volume volume of the drink in l
+     * @param percent alcohol percentage
+     */
+    public Beer(String name,double volume,double percent)
+    {
+        super(name);
+        this.volume=volume;
+        this.percent=percent;
     }
 
     /**
@@ -26,7 +60,7 @@ public class Beer extends Drink
     @Override
     public double getVolume()
     {
-        return 13.5;
+        return this.volume;
     }
 
     /**
@@ -37,7 +71,7 @@ public class Beer extends Drink
     @Override
     public double getAlcoholPercent()
     {
-        return 5.0;
+        return this.percent;
     }
 
     /**
@@ -87,5 +121,25 @@ public class Beer extends Drink
             case "AT": return brandsAT;
             default: throw new Exception("No valid country");
         }
+    }
+
+    /**
+     * Checks if member var title is a common brand in a certain country
+     * @param country
+     * @return true if it is, false if it's not
+     */
+    public boolean isCommonIn(String country)
+    {
+        try
+        {
+            ArrayList<String> cmn = new ArrayList<> (Arrays.asList(this.commonBrands("AT")));
+            if(cmn.contains(this.name))
+                return true;
+        }
+        catch(Exception e)
+        {
+            System.out.println("An Error occurred.");
+        }
+        return false;
     }
 }
