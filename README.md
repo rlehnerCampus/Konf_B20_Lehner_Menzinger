@@ -37,3 +37,7 @@
 - fixed bug in Beer.java isCommonIn - before "AT" was used instead of the parameter
 
 - implemented in Main.java with output of the main facts
+
+### Used sources
+
+- Years of experience through training with recognised alcoholics
