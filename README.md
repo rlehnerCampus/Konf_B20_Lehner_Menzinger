@@ -4,6 +4,7 @@
 
 ##### Christoph Menzinger:
 
+###### Description: 
 - extends new class "Whiskey.java" extends from Drink.java
 
 - initialization of age, region and bottling of Whiskey.java
@@ -15,6 +16,28 @@
 - definition of the new whiskey in new main
 
 - print information of the new whiskey "Jameson"
+
+###### Task 2:
+
+- change pom.xml for JUnit Test
+
+- create new method in whiskey (dilute) **to change the alcohol**
+
+  ```java
+    public int dilute(int alc, int water){}
+  ````
+- create the "test" folder an create the test class "WhiskeyTest" 
+  and add them to my branch 
+
+- declare test for all methods
+
+- init all tests an reached the 100% (**14 Tests**)
+
+###### Used Sources:
+
+[makeareadme](https://www.makeareadme.com "first steps in Docs")
+ 
+[Markdown tutorial](https://www.youtube.com/watch?v=6A5EpqqDOdk "practical use")
 
 
 ##### Robert Lehner
