@@ -1,10 +1,12 @@
 # Konf_B20_Lehner_Menzinger
 
-### Changelog
+## Changelog
 
-##### Christoph Menzinger:
+### Christoph Menzinger:
 
-###### Description: 
+#### Description: 
+
+##### Task 1:
 - extends new class "Whiskey.java" extends from Drink.java
 
 - initialization of age, region and bottling of Whiskey.java
@@ -17,20 +19,36 @@
 
 - print information of the new whiskey "Jameson"
 
-###### Task 2:
+##### Task 2:
 
-- change pom.xml for JUnit Test
+###### Change pom.xml for JUnit Test
+- copied the pom.xml from the calculator example
 
-- create new method in whiskey (dilute) **to change the alcohol**
+###### Create new method in whiskey (dilute) 
+- **to change the alcohol**
+- the parameters of the method are a amount of alcohol and a amount of water
+- the water gets divide by two
+- then the alc gets subtract by water
+- the method returns the new amount of alcohol
 
   ```java
     public int dilute(int alc, int water){}
   ````
-- create the "test" folder an create the test class "WhiskeyTest" 
-  and add them to my branch 
+###### Create the "test" folder" 
+- in maven-standard
 
-- declare test for all methods
-
+###### Create my Test class
+  ```java
+     class WhiskeyTest{}
+  ```
+- create/declare all tests
+- init the ``` @BeforeEach```
+  method for working with the same constructed object
+- declare all test-methods 
+- for my ```
+          void testDilute(){} 
+          ```
+  i pre-calculated some tasks which i have passed the ``` @ParameterizedTest```
 - init all tests an reached the 100% (**14 Tests**)
 
 ###### Used Sources:
