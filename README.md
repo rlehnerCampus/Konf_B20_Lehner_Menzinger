@@ -58,7 +58,9 @@
 [Markdown tutorial](https://www.youtube.com/watch?v=6A5EpqqDOdk "practical use")
 
 
-##### Robert Lehner
+### Robert Lehner
+
+#### Task 1
 
 - extends Drink.java with Beer.java
 
@@ -79,6 +81,16 @@
 
 - implemented in Main.java with output of the main facts
 
-### Used sources
+#### Task 2
+- As jDoc was implemented last time, for this task only a changed method was updated
+- Adapted ``` Beer.isCommonIn()``` to throw a Exception in the catch block, in order to can test the catch block.
+- Added test cases for each method and all possible return values
+- ```@BeforeEach``` creates 4 objects to test all possible constructors
+- ![img.png](img.png) Reached 100% in Class, Method and Line
+
+###### Used sources
 
 - Years of experience through training with recognised alcoholics
+- https://www.makeareadme.com/
+- https://www.markdownguide.org/cheat-sheet
+- Expiences of former projects

@@ -10,6 +10,7 @@ package at.fhj.iit;
 import java.security.spec.RSAOtherPrimeInfo;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.InvalidPropertiesFormatException;
 
 public class Beer extends Drink
 {
@@ -91,7 +92,7 @@ public class Beer extends Drink
      * @return List of common brands in the country
      * @throws Exception if country is not DE or AT
      */
-    public String[] commonBrands(String country) throws Exception
+    public String[] commonBrands(String country) throws InvalidPropertiesFormatException
     {
         String[] brandsAT = new String[10];
         brandsAT[0]="Goesser";
@@ -119,7 +120,7 @@ public class Beer extends Drink
         {
             case "DE": return brandsDE;
             case "AT": return brandsAT;
-            default: throw new Exception("No valid country");
+            default: throw new InvalidPropertiesFormatException("No valid country");
         }
     }
 
@@ -127,8 +128,9 @@ public class Beer extends Drink
      * Checks if member var title is a common brand in a certain country
      * @param country
      * @return true if it is, false if it's not
+     * @throws Exception to check if catch block works
      */
-    public boolean isCommonIn(String country)
+    public boolean isCommonIn(String country) throws Exception
     {
         try
         {
@@ -138,7 +140,7 @@ public class Beer extends Drink
         }
         catch(Exception e)
         {
-            System.out.println("An Error occurred.");
+            throw new Exception("An Error occurred.");
         }
         return false;
     }
