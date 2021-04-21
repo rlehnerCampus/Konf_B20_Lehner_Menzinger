@@ -85,8 +85,25 @@
 - As jDoc was implemented last time, for this task only a changed method was updated
 - Adapted ``` Beer.isCommonIn()``` to throw a Exception in the catch block, in order to can test the catch block.
 - Added test cases for each method and all possible return values
+  - Pro Tipp: IntelliJ creates test cases by clicking right on the class name ![img_1.png](img_1.png)
 - ```@BeforeEach``` creates 4 objects to test all possible constructors
 - ![img.png](img.png) Reached 100% in Class, Method and Line
+- Explanation of why I did not achieve 100% is omitted because I did it.
+
+##### JavaDoc for Dummies
+1. Use ```/**``` instead of ```/*``` - most IDEs then generate JavaDoc automatically
+2. Most common Tags:
+    - ```@author``` (classes and interfaces) defines the author
+    - ```@version``` (classes and interfaces) defines the version
+    - ```@param``` (methods and constructors) explains a parameter
+    - ```@return``` (methods) explains the return value
+    - ```@exception``` equals ```@throws``` explains a possibly thrown exception
+    - ```@see``` adds a reference
+3. Use all the tags provided above in the order as above at the places stated above
+4. Be happy about a good documentation
+5. Used literature: https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#terminology
+
+
 
 ###### Used sources
 
