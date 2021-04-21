@@ -2,7 +2,8 @@ package at.fhj.iit;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception
+    {
 
         Liquid l = new Liquid("Wein", 0.125, 13);
         System.out.println(l.getName());
