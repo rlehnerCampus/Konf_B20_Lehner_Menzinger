@@ -30,7 +30,6 @@
 - the water gets divide by two
 - then the alc gets subtract by water
 - the method returns the new amount of alcohol
-
   ```java
     public int dilute(int alc, int water){}
   ````
@@ -41,7 +40,8 @@
   ```java
      class WhiskeyTest{}
   ```
-- create/declare all tests
+  ![img_2.png](img_2.png)
+- create/declare all tests !
 - init the ``` @BeforeEach```
   method for working with the same constructed object
 - declare all test-methods 
@@ -90,7 +90,7 @@
 - ![img.png](img.png) Reached 100% in Class, Method and Line
 - Explanation of why I did not achieve 100% is omitted because I did it.
 
-##### JavaDoc for Dummies
+### JavaDoc for Dummies
 1. Use ```/**``` instead of ```/*``` - most IDEs then generate JavaDoc automatically
 2. Most common Tags:
     - ```@author``` (classes and interfaces) defines the author
