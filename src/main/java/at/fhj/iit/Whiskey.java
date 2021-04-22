@@ -1,9 +1,5 @@
 package at.fhj.iit;
 
-import java.util.Collection;
-import java.util.Iterator;
-import java.util.Set;
-
 public class Whiskey extends Drink{
 
     private int age;
@@ -15,13 +11,16 @@ public class Whiskey extends Drink{
      *
      * @param name name of the drink
      */
-    public Whiskey(String name) {
+    public Whiskey(String name, int age, String region, String bottling) {
         super(name);
+        this.age = age;
+        this.region = region;
+        this.bottling = bottling;
     }
 
     @Override
     public double getVolume() {
-        return 0;
+        return 0.5;
     }
 
     @Override
@@ -31,7 +30,7 @@ public class Whiskey extends Drink{
 
     @Override
     public boolean isAlcoholic() {
-        return false;
+        return true;
     }
 
     public int getAge(){
@@ -49,13 +48,22 @@ public class Whiskey extends Drink{
     public void setAge(int age) {
         this.age = age;
     }
+
     public void setBottling(String bottling){
         this.bottling = bottling;
     }
+
     public void setRegion(String region){
         this.region = region;
     }
+
+    public int dilute(int alc, int water){
+        int dilute = alc - water /2;
+        return dilute;
+    }
 }
+
+
 
 
 

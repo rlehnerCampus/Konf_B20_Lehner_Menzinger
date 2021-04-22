@@ -13,7 +13,7 @@ public class Main {
         System.out.println(d);
         System.out.println();
 
-        Whiskey j = new Whiskey("Jameson");
+        Whiskey j = new Whiskey("whiskey", 12,"ireland","oak");
         System.out.println("New Whiskey: " + j.name);
         j.setAge(10);
         System.out.println("Age in years " + j.getAge());
