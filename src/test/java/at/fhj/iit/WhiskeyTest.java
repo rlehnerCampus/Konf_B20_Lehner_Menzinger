@@ -73,16 +73,16 @@ class WhiskeyTest {
 
     @ParameterizedTest
     @CsvSource({
-            " 40,  10,  35",
-            " 38,  12,  32",
-            " 56,  12,  50",
-            " 60,  10,  55",
-            " 35,  18,  26",
+            " 40, 19",
+            " 38, 20",
+            " 56, 11",
+            " 60, 9",
+            " 36, 21",
     })
     @DisplayName("Testing dilute")
-    void testAdd(int addend1, int addend2, int expected) {
+    void testAdd(int addend1, int expected) {
         // EXERCISE PHASE
-        int actual = w.dilute(addend1,addend2);
+        int actual = w.dilute(addend1);
 
         // VERIFY PHASE
         assertEquals(expected, actual);
