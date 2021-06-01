@@ -123,6 +123,13 @@
 4. Be happy about a good documentation
 5. Used literature: https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#terminology
 
+#### Task 3
+- Created class CashRegister
+- Implemented methods and variables to be able to sell a product and get numerous reports in double format
+    - sell method for selling a product
+    - total Revenue with 2 signatures for getting the report numbers with criteria
+    - setter and getter for user, if user is changed while using cash register
+- Tested new methods with 100% coverage
 
 
 ###### Used sources
