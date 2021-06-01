@@ -12,8 +12,8 @@ public interface RegisteredDrinks {
      double price = 0.0;
      String date = "20.02.1995";
 
-     public abstract void setPrice();
+     public abstract double getPrice();
 
-     public abstract void setDate();
+     public abstract String getDate();
 
 }

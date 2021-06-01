@@ -149,16 +149,18 @@ public class Beer extends Drink implements RegisteredDrinks
      * set Price for Beer
      */
     @Override
-    public void setPrice() {
-        double price = 4.50;
+    public double getPrice() {
+        double price = 3.90;
+        return price;
     }
 
     /**
      * set Date for Beer
      */
     @Override
-    public void setDate() {
-        String date = "28.05.2021";
+    public String getDate() {
+        String date = "11.06.2021";
+        return date;
     }
 
 }

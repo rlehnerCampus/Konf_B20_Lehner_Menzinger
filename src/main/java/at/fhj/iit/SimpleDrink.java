@@ -62,16 +62,18 @@ public class SimpleDrink extends Drink implements RegisteredDrinks{
      * set Price for SimpleDrink
      */
     @Override
-    public void setPrice() {
-        double price = 3.50;
+    public double getPrice() {
+        double price = 5.90;
+        return price;
     }
 
     /**
-     * set Price for Date
+     * set Date for SimpleDrink
      */
     @Override
-    public void setDate() {
-        String date = "13.06.2021";
+    public String getDate() {
+        String date = "01.11.2021";
+        return date;
     }
 
 

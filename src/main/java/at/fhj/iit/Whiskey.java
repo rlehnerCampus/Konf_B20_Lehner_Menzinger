@@ -114,16 +114,18 @@ public class Whiskey extends Drink implements RegisteredDrinks{
      * set Price for Whiskey
      */
     @Override
-    public void setPrice() {
+    public double getPrice() {
         double price = 30.90;
+        return price;
     }
 
     /**
      * set Date for Whiskey
      */
     @Override
-    public void setDate() {
+    public String getDate() {
         String date = "01.06.2021";
+        return date;
     }
 
 }

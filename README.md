@@ -51,6 +51,21 @@
   i pre-calculated some tasks which i have passed the ``` @ParameterizedTest```
 - init all tests an reached the 100% (**14 Tests**)
 
+##### Task 3:
+
+-implement an interface for CashRegister and implement all Drink methods
+  ```java
+     public interface RegisteredDrinks
+  ```
+  ```java
+     public class Whiskey extends Drink implements RegisteredDrinks
+     public class Beer extends Drink implements RegisteredDrinks
+     public class SimpleDrink extends Drink implements RegisteredDrinks
+  ```
+
+
+
+
 ###### Used Sources:
 
 [makeareadme](https://www.makeareadme.com "first steps in Docs")
