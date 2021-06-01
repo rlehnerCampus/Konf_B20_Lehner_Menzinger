@@ -115,7 +115,7 @@ public class Whiskey extends Drink implements RegisteredDrinks{
      */
     @Override
     public double getPrice() {
-        double price = 30.90;
+        double price = getVolume() * getAlcoholPercent();
         return price;
     }
 

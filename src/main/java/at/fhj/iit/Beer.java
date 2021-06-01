@@ -150,7 +150,7 @@ public class Beer extends Drink implements RegisteredDrinks
      */
     @Override
     public double getPrice() {
-        double price = 3.90;
+        double price = getVolume() *10;
         return price;
     }
 

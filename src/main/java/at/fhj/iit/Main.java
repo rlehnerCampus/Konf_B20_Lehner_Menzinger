@@ -29,7 +29,5 @@ public class Main {
         System.out.printf("Is common in AT: %b%n",b.isCommonIn("AT"));
         System.out.printf("Is common in DE: %b%n",b.isCommonIn("DE"));
 
-
-
     }
 }
