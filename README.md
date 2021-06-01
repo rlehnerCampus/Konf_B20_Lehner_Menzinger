@@ -95,10 +95,15 @@
 2. Most common Tags:
     - ```@author``` (classes and interfaces) defines the author
     - ```@version``` (classes and interfaces) defines the version
+    - ```@since jdl-version``` (classes, interfaces, methods and instance variables) since when the functionality has existed
+    - ```@see reference``` (classes, interfaces, methods and instance variables) creates a link to another element
+    - ```@serial``` (classes) defines the serialized data 
+    - ```@serialField``` (classes and methods) defines the serialized object
     - ```@param``` (methods and constructors) explains a parameter
     - ```@return``` (methods) explains the return value
     - ```@exception``` equals ```@throws``` explains a possibly thrown exception
     - ```@see``` adds a reference
+    - ```@deprecated description``` defines a deprecated method
 3. Use all the tags provided above in the order as above at the places stated above
 4. Be happy about a good documentation
 5. Used literature: https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#terminology
