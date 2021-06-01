@@ -52,7 +52,6 @@ public class CashRegisterTest
         c3.sell(w.getPrice(),getType(w.getAlcoholPercent()));
         SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
         Date currentTime = new Date();
-
         assertEquals(19.5,c3.totalRevenue(formatter.format(currentTime),""));
         assertEquals(19.5,c3.totalRevenue(formatter.format(currentTime),"Christian"));
         assertEquals(0,c3.totalRevenue(formatter.format(currentTime),"Christoph"));
