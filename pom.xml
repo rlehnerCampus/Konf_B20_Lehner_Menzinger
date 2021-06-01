@@ -30,14 +30,13 @@
   <developers>
     <!-- each developer with general information for better communication within the project team -->
     <developer>
-      <id>michaelulm</id>
-      <name>Michael Ulm</name>
-      <email>michael.ulm@fh-joanneum.at</email>
-      <url>https://www.michael-ulm.at</url>
-      <organization>FH JOANNEUM GmbH</organization>
+      <id>christophMenzinger</id>
+      <name>christophMenzinger</name>
+      <email>christoph.menzinger@edu.campus02.at</email>
+      <organization>CAMPUS 02 Fachhochschule der Wirtschaft GmbH</organization>
       <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
       <roles>
-        <role>Senior Lecturer</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
       <properties>
@@ -45,28 +44,15 @@
       </properties>
     </developer>
     <developer>
-      <id>chrishofer</id>
-      <name>Christian Hofer</name>
-      <email>christian.hofer@campus02.at</email>
+      <id>RobertLehner</id>
+      <name>Robert Lehner</name>
+      <email>robert.lehner@edu.campus02.at</email>
       <organization>CAMPUS 02 Fachhochschule der Wirtschaft GmbH</organization>
       <organizationUrl>https://www.campus02.at/wirtschaftsinformatik</organizationUrl>
       <roles>
-        <role>Lecturer &amp; Research Scientist</role>
+        <role>Student</role>
       </roles>
       <timezone>Europe/Vienna</timezone>
-    </developer>
-    <developer>
-      <id>Rigbin</id>
-      <name>Harald Schwab</name>
-      <email>harald.schwab2@fh-joanneum.at</email>
-      <url>https://github.com/Rigbin</url>
-      <organization>FH JOANNEUM GmbH</organization>
-      <organizationUrl>https://www.fh-joanneum.at/iit</organizationUrl>
-      <roles>
-        <role>Researcher</role>
-      </roles>
-      <timezone>Europe/Vienna</timezone>
-      <properties/>
     </developer>
   </developers>
 

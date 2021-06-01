@@ -1,6 +1,6 @@
 package at.fhj.iit;
 
-public class Whiskey extends Drink{
+public class Whiskey extends Drink implements RegisteredDrinks{
 
     private int age;
     private String region;
@@ -101,6 +101,30 @@ public class Whiskey extends Drink{
     public int dilute(int water){
         int dilute = (int) (this.getAlcoholPercent() - water /2);
         return dilute;
+    }
+
+    /**
+     * set Price for Whiskey
+     */
+    @Override
+    public void setPrice() {
+        double price = 30.90;
+    }
+
+    /**
+     * set Date for Whiskey
+     */
+    @Override
+    public void setDate() {
+        String date = "01.06.2021";
+    }
+
+    /**
+     * set Employee for Whiskey
+     */
+    @Override
+    public void setEmployee() {
+        String employee = "Walter";
     }
 }
 
