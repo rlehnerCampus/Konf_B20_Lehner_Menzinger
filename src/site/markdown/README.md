@@ -40,6 +40,7 @@
   ```java
      class WhiskeyTest{}
   ```
+  ![img_2.png](img_2.png)
 - create/declare all tests !
 - init the ``` @BeforeEach```
   method for working with the same constructed object
@@ -61,9 +62,9 @@
      public class Beer extends Drink implements RegisteredDrinks
      public class SimpleDrink extends Drink implements RegisteredDrinks
   ```
+-use Maven Lifecycle to create /target and /site
 
-
-
+-create DESIGN.md; README.md; TESTS.md; TUTORIAL.md and described our project
 
 ###### Used Sources:
 
@@ -99,9 +100,9 @@
 - As jDoc was implemented last time, for this task only a changed method was updated
 - Adapted ``` Beer.isCommonIn()``` to throw a Exception in the catch block, in order to can test the catch block.
 - Added test cases for each method and all possible return values
-  - Pro Tipp: IntelliJ creates test cases by clicking right on the class name 
+  - Pro Tipp: IntelliJ creates test cases by clicking right on the class name ![img_1.png](img_1.png)
 - ```@BeforeEach``` creates 4 objects to test all possible constructors
-- Reached 100% in Class, Method and Line
+- ![img.png](img.png) Reached 100% in Class, Method and Line
 - Explanation of why I did not achieve 100% is omitted because I did it.
 
 ### JavaDoc for Dummies
@@ -122,6 +123,13 @@
 4. Be happy about a good documentation
 5. Used literature: https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html#terminology
 
+#### Task 3
+- Created class CashRegister
+- Implemented methods and variables to be able to sell a product and get numerous reports in double format
+    - sell method for selling a product
+    - total Revenue with 2 signatures for getting the report numbers with criteria
+    - setter and getter for user, if user is changed while using cash register
+- Tested new methods with 100% coverage
 
 
 ###### Used sources

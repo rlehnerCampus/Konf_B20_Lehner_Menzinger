@@ -1,0 +1,21 @@
+<project name="Konf_B20_Lehner_Menzinger">
+    <publishDate position="right"/>
+    <version position="left"/>
+    <body>
+
+        <menu name="Overview">
+            <item name="Introduction" href="index.html" />
+            <item name="Design" href="DESIGN.html" />
+            <item name="README" href="README.html" />
+            <item name="Tests" href="TESTS.html" />
+            <item name="Tutorial" href="TUTORIAL.html" />
+
+        </menu>
+        <menu ref="reports" />
+        <menu ref="parent" />
+        <menu ref="modules" />
+    </body>
+    <poweredBy>
+        <logo name="IT-DUAL" href="https://it-dual.fh-joanneum.at/" img="./images/itdual-300x81.png" width="100px"/>
+    </poweredBy>
+</project>
