@@ -161,11 +161,4 @@ public class Beer extends Drink implements RegisteredDrinks
         String date = "28.05.2021";
     }
 
-    /**
-     * set Date for Beer
-     */
-    @Override
-    public void setEmployee() {
-        String employee = "Bernhard";
-    }
 }

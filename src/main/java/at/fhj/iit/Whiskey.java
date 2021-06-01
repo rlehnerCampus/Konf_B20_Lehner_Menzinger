@@ -1,3 +1,10 @@
+/**
+ *   Konf_B20_Lehner_Menzinger - Beer.java
+ *   Extends the Drinks Class for Beer
+ *   Author: Christoph Menzinger <christoph.menzinger@edu.campus02.at>
+ *   Last Change: 2021-03-11
+ */
+
 package at.fhj.iit;
 
 public class Whiskey extends Drink implements RegisteredDrinks{
@@ -119,13 +126,6 @@ public class Whiskey extends Drink implements RegisteredDrinks{
         String date = "01.06.2021";
     }
 
-    /**
-     * set Employee for Whiskey
-     */
-    @Override
-    public void setEmployee() {
-        String employee = "Walter";
-    }
 }
 
 

@@ -1,16 +1,19 @@
-package at.fhj.iit;
+/**
+ *   Konf_B20_Lehner_Menzinger - Beer.java
+ *   Extends the Drinks Class for Beer
+ *   Author: Christoph Menzinger <christoph.menzinger@edu.campus02.at>
+ *   Last Change: 2021-03-11
+ */
 
-import java.util.Date;
+package at.fhj.iit;
 
 public interface RegisteredDrinks {
 
      double price = 0.0;
-     String Date = "20.02.1995";
-     String employee = "Mustermann";
+     String date = "20.02.1995";
 
      public abstract void setPrice();
 
      public abstract void setDate();
 
-     public abstract void setEmployee();
 }
