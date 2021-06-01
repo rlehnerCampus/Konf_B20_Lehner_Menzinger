@@ -130,6 +130,7 @@
     - total Revenue with 2 signatures for getting the report numbers with criteria
     - setter and getter for user, if user is changed while using cash register
 - Tested new methods with 100% coverage
+- Added Markdown for Maven Site
 
 
 ###### Used sources
