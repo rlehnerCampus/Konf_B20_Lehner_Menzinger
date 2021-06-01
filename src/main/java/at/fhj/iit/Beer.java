@@ -12,7 +12,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.InvalidPropertiesFormatException;
 
-public class Beer extends Drink
+public class Beer extends Drink implements RegisteredDrinks
 {
     private double volume = 0.5;
     private double percent = 5.134;
@@ -144,4 +144,21 @@ public class Beer extends Drink
         }
         return false;
     }
+
+    /**
+     * set Price for Beer
+     */
+    @Override
+    public void setPrice() {
+        double price = 4.50;
+    }
+
+    /**
+     * set Date for Beer
+     */
+    @Override
+    public void setDate() {
+        String date = "28.05.2021";
+    }
+
 }
