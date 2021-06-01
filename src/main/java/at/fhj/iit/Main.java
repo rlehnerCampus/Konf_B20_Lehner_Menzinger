@@ -2,6 +2,19 @@ package at.fhj.iit;
 
 public class Main {
 
+    private static CashRegister.alcoholType getType(double percent)
+    {
+        CashRegister.alcoholType var;
+        if(percent==0)
+            var = CashRegister.alcoholType.non;
+        else if(percent<=16)
+            var = CashRegister.alcoholType.weak;
+        else
+            var = CashRegister.alcoholType.strong;
+        return var;
+    }
+
+
     public static void main(String[] args) throws Exception
     {
 
@@ -28,6 +41,12 @@ public class Main {
         System.out.printf("Percent: %.2f%n",b.getAlcoholPercent());
         System.out.printf("Is common in AT: %b%n",b.isCommonIn("AT"));
         System.out.printf("Is common in DE: %b%n",b.isCommonIn("DE"));
+
+        CashRegister register = new CashRegister("Christoph");
+        register.sell(j.getPrice(),getType(j.getAlcoholPercent()));
+
+        System.out.println();
+        System.out.println("Total Revenue: "+register.totalRevenue(j.getDate(),register.getEmployee()));
 
     }
 }

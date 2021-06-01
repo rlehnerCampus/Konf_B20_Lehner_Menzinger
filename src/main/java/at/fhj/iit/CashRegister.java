@@ -89,12 +89,12 @@ public class CashRegister
         {
             if(!day.isEmpty()&&!person.isEmpty())
             {
-                if(sale.get("day").equals(day)&&sale.get("employee").equals(person))
+                if(sale.get("day").equals(day)&&sale.get("person").equals(person))
                     ret_val+=Double.parseDouble(sale.get("price"));
             }
             else if(day.isEmpty()&&!person.isEmpty())
             {
-                if(sale.get("employee").equals(person))
+                if(sale.get("person").equals(person))
                     ret_val+=Double.parseDouble(sale.get("price"));
             }
             else if(!day.isEmpty())
@@ -127,6 +127,7 @@ public class CashRegister
     {
         this.employee = employee;
     }
+
 
 
 }

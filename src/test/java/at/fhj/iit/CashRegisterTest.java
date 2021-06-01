@@ -45,6 +45,7 @@ public class CashRegisterTest
         assertEquals(7,c3.totalRevenue(CashRegister.alcoholType.weak));
     }
 
+
     @Test
     void testTotalRevenue() throws Exception
     {
