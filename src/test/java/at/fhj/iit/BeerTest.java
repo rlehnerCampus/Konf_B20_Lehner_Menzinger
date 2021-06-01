@@ -61,9 +61,31 @@ class BeerTest
     @Test
     void commonBrands() throws InvalidPropertiesFormatException
     {
-        assertNotNull(b1.commonBrands("AT"));
-        assertNotNull(b2.commonBrands("DE"));
-        assertThrows(InvalidPropertiesFormatException.class,()->{b3.commonBrands("XY");});
+        String[] brandsAT = new String[10];
+        brandsAT[0]="Goesser";
+        brandsAT[1]="Stiegl";
+        brandsAT[2]="Ottakringer";
+        brandsAT[3]="Zipfer";
+        brandsAT[4]="Hirter";
+        brandsAT[5]="Puntigamer";
+        brandsAT[6]="Schwechater";
+        brandsAT[7]="Wieselburger";
+        brandsAT[8]="Freistaedter";
+        brandsAT[9]="Murauer";
+        String[] brandsDE = new String[10];
+        brandsDE[0]="Krombacher";
+        brandsDE[1]="Oettinger";
+        brandsDE[2]="Bittburger";
+        brandsDE[3]="Veltins";
+        brandsDE[4]="Becks";
+        brandsDE[5]="Paulaner";
+        brandsDE[6]="Warsteiner";
+        brandsDE[7]="Hasseroeder";
+        brandsDE[8]="Radeberger";
+        brandsDE[9]="Erdinger";
+        assertArrayEquals(brandsAT,b1.commonBrands("AT"));
+        assertArrayEquals(brandsDE,b2.commonBrands("DE"));
+        assertThrows(InvalidPropertiesFormatException.class,()-> b3.commonBrands("XY"));
     }
 
     @Test
@@ -77,6 +99,6 @@ class BeerTest
         assertTrue(b3.isCommonIn("AT"));
         assertTrue(b4.isCommonIn("DE"));
         assertFalse(b4.isCommonIn("AT"));
-        assertThrows(Exception.class,()->{b3.isCommonIn("");});
+        assertThrows(Exception.class,()-> b3.isCommonIn(""));
     }
 }
